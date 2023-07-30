@@ -1,31 +1,39 @@
 import { BsSearch, BsPerson } from "react-icons/bs";
 import { BiLockAlt, BiMenu } from "react-icons/bi";
-import { IoIosArrowDown } from "react-icons/io";
+import { IoIosArrowDown, IoMdClose } from "react-icons/io";
 import logo from '../../assets/logo.png'
 import { useState } from "react";
 
 const Navbar = () => {
     const [showSearch, setShowSearch] = useState(false);
+    const [menu, setMenu] = useState(false);
 
 
-   
+
     return (
         <nav className="container mx-auto my-5 lg:flex justify-between">
 
             <button className="absolute lg:hidden">
-                <BiMenu size={30} color="blue"/>
+                <BiMenu onClick={()=>setMenu(true)} size={30} color="blue" />
             </button>
 
             <img src={logo} alt="" className="h-full mx-auto lg:mx-0" />
 
-            <div className="lg:flex gap-5 border w-fit space-y-5 lg:space-y-0 h-screen lg:h-fit">
-                <ul className="flex lg:flex-row flex-col gap-5 w-fit mx-auto lg:mx-0">
+            
 
-                    <li className="relative flex items-center justify-between text-base font-semibold cursor-pointer group">Home <IoIosArrowDown/>
+            <div className={`absolute lg:static top-0 ${menu? 'left-0' : '-left-[500px]'} duration-1000 lg:flex gap-5 w-fit space-y-10 lg:space-y-0 h-screen lg:h-fit bg-blue-500 lg:bg-white`}>
+                <div className="bg-white border-2 lg:hidden border-white flex">
+
+                    <img src={logo} alt="" className="mx-auto" />
+                    <button onClick={()=>setMenu(false)} className=""><IoMdClose size={35}/></button>
+                </div>
+                <ul className="flex lg:flex-row flex-col gap-8 w-fit mx-auto lg:mx-0 px-32 lg:p-0">
+
+                    <li className="relative flex items-center justify-between text-base font-semibold cursor-pointer group">Home <IoIosArrowDown />
 
 
                         <ul
-                            className="invisible absolute lg:top-10 top-6 left-0 right-0 w-40 z-50 bg-gray-100 p-1 text-gray-800 shadow-xl group-hover:visible">
+                            className="invisible absolute lg:top-10 top-6 left-0 right-0 w-40 z-10 bg-gray-100 p-1 text-gray-800 shadow-xl group-hover:visible">
                             <li
                                 className="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2"
                             >Product One</li
@@ -47,10 +55,10 @@ const Navbar = () => {
                     </li>
 
 
-                    <li className="relative flex items-center justify-between text-base font-semibold cursor-pointer group">Doctors <IoIosArrowDown/>
+                    <li className="relative flex items-center justify-between text-base font-semibold cursor-pointer group">Doctors <IoIosArrowDown />
 
                         <ul
-                            className="invisible absolute lg:top-10 top-6 left-0 right-0 w-40 z-50 bg-gray-100 p-1 text-gray-800 shadow-xl group-hover:visible">
+                            className="invisible absolute lg:top-10 top-6 left-0 right-0 w-40 z-10 bg-gray-100 p-1 text-gray-800 shadow-xl group-hover:visible">
                             <li
                                 className="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2"
                             >Product One</li>
@@ -70,10 +78,10 @@ const Navbar = () => {
 
 
                     </li>
-                    <li className="relative flex items-center justify-between text-base font-semibold cursor-pointer group">Patients <IoIosArrowDown/>
+                    <li className="relative flex items-center justify-between text-base font-semibold cursor-pointer group">Patients <IoIosArrowDown />
 
                         <ul
-                            className="invisible absolute lg:top-10 top-6 left-0 right-0 w-40 z-50 bg-gray-100 p-1 text-gray-800 shadow-xl group-hover:visible">
+                            className="invisible absolute lg:top-10 top-6 left-0 right-0 w-40 z-10 bg-gray-100 p-1 text-gray-800 shadow-xl group-hover:visible">
                             <li
                                 className="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2"
                             >Product One</li
@@ -93,34 +101,10 @@ const Navbar = () => {
                             </li>
                         </ul>
                     </li>
-                    <li className="relative flex items-center justify-between text-base font-semibold cursor-pointer group">Pharmacy <IoIosArrowDown/>
+                    <li className="relative flex items-center justify-between text-base font-semibold cursor-pointer group">Pharmacy <IoIosArrowDown />
 
                         <ul
-                            className="invisible absolute lg:top-10 top-6 left-0 right-0 w-40 z-50 bg-gray-100 p-1 text-gray-800 shadow-xl group-hover:visible">
-                            <li
-                                className="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2"
-                            >Product One</li
-                            >
-
-                            <li
-                                className="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2"
-                            >Product Two</li
-                            >
-                            <li
-                                className="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2"
-                            >Product Three
-                            </li>
-                            <li
-                                className="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2"
-                            >Product Four
-                            </li>
-                        </ul>
-
-                    </li>
-                    <li className="relative flex items-center justify-between text-base font-semibold cursor-pointer group">Pages <IoIosArrowDown/>
-
-                        <ul
-                            className="invisible absolute lg:top-10 top-6 left-0 right-0 w-40 z-50 bg-gray-100 p-1 text-gray-800 shadow-xl group-hover:visible">
+                            className="invisible absolute lg:top-10 top-6 left-0 right-0 w-40 z-10 bg-gray-100 p-1 text-gray-800 shadow-xl group-hover:visible">
                             <li
                                 className="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2"
                             >Product One</li
@@ -141,10 +125,10 @@ const Navbar = () => {
                         </ul>
 
                     </li>
-                    <li className="relative flex items-center justify-between text-base font-semibold cursor-pointer group">Blog <IoIosArrowDown/>
+                    <li className="relative flex items-center justify-between text-base font-semibold cursor-pointer group">Pages <IoIosArrowDown />
 
                         <ul
-                            className="invisible absolute lg:top-10 top-6 left-0 right-0 w-40 z-50 bg-gray-100 p-1 text-gray-800 shadow-xl group-hover:visible">
+                            className="invisible absolute lg:top-10 top-6 left-0 right-0 w-40 z-10 bg-gray-100 p-1 text-gray-800 shadow-xl group-hover:visible">
                             <li
                                 className="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2"
                             >Product One</li
@@ -165,10 +149,34 @@ const Navbar = () => {
                         </ul>
 
                     </li>
-                    <li className="relative flex items-center justify-between text-base font-semibold cursor-pointer group">Admin <IoIosArrowDown/>
+                    <li className="relative flex items-center justify-between text-base font-semibold cursor-pointer group">Blog <IoIosArrowDown />
 
                         <ul
-                            className="invisible absolute lg:top-10 top-6 right-0 w-40 z-50 bg-gray-100 p-1 text-gray-800 shadow-xl group-hover:visible">
+                            className="invisible absolute lg:top-10 top-6 left-0 right-0 w-40 z-10 bg-gray-100 p-1 text-gray-800 shadow-xl group-hover:visible">
+                            <li
+                                className="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2"
+                            >Product One</li
+                            >
+
+                            <li
+                                className="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2"
+                            >Product Two</li
+                            >
+                            <li
+                                className="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2"
+                            >Product Three
+                            </li>
+                            <li
+                                className="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2"
+                            >Product Four
+                            </li>
+                        </ul>
+
+                    </li>
+                    <li className="relative flex items-center justify-between text-base font-semibold cursor-pointer group">Admin <IoIosArrowDown />
+
+                        <ul
+                            className="invisible absolute lg:top-10 top-6 right-0 w-40 z-10 bg-gray-100 p-1 text-gray-800 shadow-xl group-hover:visible">
                             <li
                                 className="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2"
                             >Product One</li
@@ -192,14 +200,14 @@ const Navbar = () => {
                 </ul>
 
 
-                <div className="flex gap-5 border">
+                <div className="flex gap-5 items-center px-32 lg:px-0">
                     <div className="relative hidden lg:block">
-                        <button onClick={()=>setShowSearch(!showSearch)} className="w-fit h-fit lg:w-fit text-center bg-red-50 px-4 py-4 rounded-full">
+                        <button onClick={() => setShowSearch(!showSearch)} className="w-fit h-fit lg:w-fit text-center bg-red-50 px-4 py-4 rounded-full">
                             <BsSearch />
                         </button>
 
-                        <form className={` bg-slate-200 rounded shadow-2xl flex absolute lg:right-0  top-12 z-10 ${showSearch? 'h-16' : 'h-0 invisible'} overflow-hidden transition-all duration-1000 ease`}>
-                            <input type="text" name="search" id="" className="bg-slate-100 h-8 border-blue-500 border-2 rounded-l-md focus:outline-none my-4 ml-5"/>
+                        <form className={` bg-slate-200 rounded shadow-2xl flex absolute lg:right-0  top-12 z-10 ${showSearch ? 'h-16' : 'h-0 invisible'} overflow-hidden transition-all duration-1000 ease`}>
+                            <input type="text" name="search" id="" className="bg-slate-100 h-8 border-blue-500 border-2 rounded-l-md focus:outline-none my-4 ml-5" />
                             <button className="h-8 bg-blue-500 rounded-r-md px-3 text-white font-semibold hover:bg-blue-400 border-blue-500 border-2 my-4 mr-5">Search</button>
                         </form>
                     </div>
