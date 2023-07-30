@@ -1,5 +1,6 @@
 import { BsSearch, BsPerson } from "react-icons/bs";
-import { BiLockAlt } from "react-icons/bi";
+import { BiLockAlt, BiMenu } from "react-icons/bi";
+import { IoIosArrowDown } from "react-icons/io";
 import logo from '../../assets/logo.png'
 import { useState } from "react";
 
@@ -9,28 +10,18 @@ const Navbar = () => {
 
    
     return (
-        <nav className="container mx-auto border my-5 lg:flex justify-between">
-            <img src={logo} alt="" className="h-full invisible lg:visible" />
+        <nav className="container mx-auto my-5 lg:flex justify-between">
 
-            <div className="lg:flex gap-5 border w-fit">
-                <ul className="lg:flex gap-5 w-fit">
+            <button className="absolute lg:hidden">
+                <BiMenu size={30} color="blue"/>
+            </button>
 
-                    <li className="relative flex items-center justify-between text-base font-semibold cursor-pointer group">Home <span>
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            strokeWidth="1.5"
-                            stroke="currentColor"
-                            className="h-6 w-6"
-                        >
-                            <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-                            />
-                        </svg>
-                    </span>
+            <img src={logo} alt="" className="h-full mx-auto lg:mx-0" />
+
+            <div className="lg:flex gap-5 border w-fit space-y-5 lg:space-y-0 h-screen lg:h-fit">
+                <ul className="flex lg:flex-row flex-col gap-5 w-fit mx-auto lg:mx-0">
+
+                    <li className="relative flex items-center justify-between text-base font-semibold cursor-pointer group">Home <IoIosArrowDown/>
 
 
                         <ul
@@ -56,22 +47,7 @@ const Navbar = () => {
                     </li>
 
 
-                    <li className="relative flex items-center justify-between text-base font-semibold cursor-pointer group">Doctors <span>
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            strokeWidth="1.5"
-                            stroke="currentColor"
-                            className="h-6 w-6"
-                        >
-                            <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-                            />
-                        </svg>
-                    </span>
+                    <li className="relative flex items-center justify-between text-base font-semibold cursor-pointer group">Doctors <IoIosArrowDown/>
 
                         <ul
                             className="invisible absolute lg:top-10 top-6 left-0 right-0 w-40 z-50 bg-gray-100 p-1 text-gray-800 shadow-xl group-hover:visible">
@@ -94,22 +70,7 @@ const Navbar = () => {
 
 
                     </li>
-                    <li className="relative flex items-center justify-between text-base font-semibold cursor-pointer group">Patients <span>
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            strokeWidth="1.5"
-                            stroke="currentColor"
-                            className="h-6 w-6"
-                        >
-                            <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-                            />
-                        </svg>
-                    </span>
+                    <li className="relative flex items-center justify-between text-base font-semibold cursor-pointer group">Patients <IoIosArrowDown/>
 
                         <ul
                             className="invisible absolute lg:top-10 top-6 left-0 right-0 w-40 z-50 bg-gray-100 p-1 text-gray-800 shadow-xl group-hover:visible">
@@ -132,22 +93,7 @@ const Navbar = () => {
                             </li>
                         </ul>
                     </li>
-                    <li className="relative flex items-center justify-between text-base font-semibold cursor-pointer group">Pharmacy <span>
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            strokeWidth="1.5"
-                            stroke="currentColor"
-                            className="h-6 w-6"
-                        >
-                            <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-                            />
-                        </svg>
-                    </span>
+                    <li className="relative flex items-center justify-between text-base font-semibold cursor-pointer group">Pharmacy <IoIosArrowDown/>
 
                         <ul
                             className="invisible absolute lg:top-10 top-6 left-0 right-0 w-40 z-50 bg-gray-100 p-1 text-gray-800 shadow-xl group-hover:visible">
@@ -171,22 +117,7 @@ const Navbar = () => {
                         </ul>
 
                     </li>
-                    <li className="relative flex items-center justify-between text-base font-semibold cursor-pointer group">Pages <span>
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            strokeWidth="1.5"
-                            stroke="currentColor"
-                            className="h-6 w-6"
-                        >
-                            <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-                            />
-                        </svg>
-                    </span>
+                    <li className="relative flex items-center justify-between text-base font-semibold cursor-pointer group">Pages <IoIosArrowDown/>
 
                         <ul
                             className="invisible absolute lg:top-10 top-6 left-0 right-0 w-40 z-50 bg-gray-100 p-1 text-gray-800 shadow-xl group-hover:visible">
@@ -210,22 +141,7 @@ const Navbar = () => {
                         </ul>
 
                     </li>
-                    <li className="relative flex items-center justify-between text-base font-semibold cursor-pointer group">Blog <span>
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            strokeWidth="1.5"
-                            stroke="currentColor"
-                            className="h-6 w-6"
-                        >
-                            <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-                            />
-                        </svg>
-                    </span>
+                    <li className="relative flex items-center justify-between text-base font-semibold cursor-pointer group">Blog <IoIosArrowDown/>
 
                         <ul
                             className="invisible absolute lg:top-10 top-6 left-0 right-0 w-40 z-50 bg-gray-100 p-1 text-gray-800 shadow-xl group-hover:visible">
@@ -249,22 +165,7 @@ const Navbar = () => {
                         </ul>
 
                     </li>
-                    <li className="relative flex items-center justify-between text-base font-semibold cursor-pointer group">Admin <span>
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            strokeWidth="1.5"
-                            stroke="currentColor"
-                            className="h-6 w-6"
-                        >
-                            <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-                            />
-                        </svg>
-                    </span>
+                    <li className="relative flex items-center justify-between text-base font-semibold cursor-pointer group">Admin <IoIosArrowDown/>
 
                         <ul
                             className="invisible absolute lg:top-10 top-6 right-0 w-40 z-50 bg-gray-100 p-1 text-gray-800 shadow-xl group-hover:visible">
@@ -291,13 +192,13 @@ const Navbar = () => {
                 </ul>
 
 
-                <div className="lg:flex gap-5">
-                    <div className="relative">
+                <div className="flex gap-5 border">
+                    <div className="relative hidden lg:block">
                         <button onClick={()=>setShowSearch(!showSearch)} className="w-fit h-fit lg:w-fit text-center bg-red-50 px-4 py-4 rounded-full">
                             <BsSearch />
                         </button>
 
-                        <form className={` bg-slate-200 rounded shadow-2xl flex absolute right-0 top-12 z-10 ${showSearch? 'h-16' : 'h-0 invisible'} overflow-hidden transition-all duration-1000 ease`}>
+                        <form className={` bg-slate-200 rounded shadow-2xl flex absolute lg:right-0  top-12 z-10 ${showSearch? 'h-16' : 'h-0 invisible'} overflow-hidden transition-all duration-1000 ease`}>
                             <input type="text" name="search" id="" className="bg-slate-100 h-8 border-blue-500 border-2 rounded-l-md focus:outline-none my-4 ml-5"/>
                             <button className="h-8 bg-blue-500 rounded-r-md px-3 text-white font-semibold hover:bg-blue-400 border-blue-500 border-2 my-4 mr-5">Search</button>
                         </form>
