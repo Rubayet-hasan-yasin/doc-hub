@@ -2,6 +2,7 @@ import Navbar from "../../../shared/Navbar/Navbar";
 import Banner from "../Banner/Banner";
 
 const Home = () => {
+
     return (
         <div>
             <Navbar/>
@@ -11,6 +12,7 @@ const Home = () => {
            
         </div>
     );
+
 };
 
 export default Home;
