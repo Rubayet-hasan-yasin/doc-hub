@@ -14,7 +14,7 @@ const Navbar = () => {
         <nav className="container mx-auto my-5 lg:flex justify-between">
 
             <button className="absolute lg:hidden">
-                <BiMenu onClick={()=>setMenu(true)} size={30} color="blue" />
+                <BiMenu onClick={()=>setMenu(true)} size={40} color="blue" />
             </button>
 
             <img src={logo} alt="" className="h-full mx-auto lg:mx-0" />
@@ -213,7 +213,7 @@ const Navbar = () => {
                     </div>
 
 
-                    <button className="relative px-3 w-fit h-fit py-2 overflow-hidden font-medium text-gray-600 bg-gray-100 border border-gray-100 rounded-lg shadow-inner group">
+                    <button className="relative px-3 w-fit h-fit py-2 overflow-hidden font-medium text-gray-600 bg-gray-100 rounded shadow-inner group font-bold">
                         <span className="absolute top-0 left-0 w-0 h-0 transition-all duration-200 border-t-2 border-gray-600 group-hover:w-full ease"></span>
                         <span className="absolute bottom-0 right-0 w-0 h-0 transition-all duration-200 border-b-2 border-gray-600 group-hover:w-full ease"></span>
                         <span className="absolute left-0 top-0 w-0 h-0 transition-all duration-200 border-l-2 border-gray-600 group-hover:h-full ease"></span>
@@ -231,21 +231,15 @@ const Navbar = () => {
                         <span className="relative flex items-center gap-1 transition-colors duration-700 delay-200 group-hover:text-white ease"><BsPerson size={20} /> Register</span>
                     </button>
 
-                    <button className="relative px-3 w-fit h-fit py-2 overflow-hidden font-medium text-gray-100 bg-gray-100 border border-gray-100 rounded-lg shadow-inner group">
+                    <button className="relative px-3 w-fit h-fit py-2 overflow-hidden font-medium text-gray-100 bg-gray-100  rounded shadow-inner group">
                         <span className="absolute top-0 left-0 w-full h-0 transition-all duration-700 delay-[1200ms] border-t-2 border-gray-600 group-hover:w-0 ease"></span>
                         <span className="absolute bottom-0 right-0 w-full h-0 transition-all duration-700 delay-[1200ms] border-b-2 border-gray-600 group-hover:w-0 ease"></span>
                         <span className="absolute left-0 top-0 w-0 h-full transition-all duration-700 delay-[1200ms] border-l-2 border-gray-600 group-hover:h-0 ease"></span>
                         <span className="absolute bottom-0 right-0 w-0 h-full transition-all duration-700 delay-[1200ms] border-r-2 border-gray-600 group-hover:h-0 ease"></span>
-
-
                         <span className="absolute top-0 left-0 w-full h-1/2 transition-all duration-1000 delay-200 bg-gray-600 group-hover:h-0 ease"></span>
                         <span className="absolute top-0 bottom-0 left-0 w-1/2 h-full transition-all duration-1000 delay-200 bg-gray-600 group-hover:w-0 ease"></span>
-
                         <span className="absolute bottom-0 left-0 w-full h-1/2 transition-all duration-1000 delay-200 bg-gray-600 group-hover:h-0 ease"></span>
                         <span className="absolute bottom-0 top-0 right-0 w-1/2 h-full transition-all duration-1000 delay-200 bg-gray-600 group-hover:w-0 ease"></span>
-
-
-                        {/* <span className="absolute inset-0 w-full h-full duration-1000 delay-300 bg-gray-100 opacity-0 group-hover:opacity-100"></span> */}
                         <span className="relative flex items-center gap-1 transition-colors duration-1000 delay-200 group-hover:text-gray-600 ease"><BiLockAlt size={20} /> Login</span>
                     </button>
 
