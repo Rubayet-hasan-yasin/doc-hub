@@ -1,4 +1,3 @@
-
 import Navbar from "../../../shared/Navbar/Navbar";
 import Banner from "../Banner/Banner";
 
