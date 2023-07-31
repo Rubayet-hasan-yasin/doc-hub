@@ -9,13 +9,6 @@ import { GrLocation } from "react-icons/gr";
 
 const Banner = () => {
     return (
-        <div className="container mx-auto lg:grid grid-cols-2 items-center">
-            <div className="flex flex-col">
-                <h1 className="text-4xl md:text-6xl text-center lg:text-left font-bold text-[#272B41] leading-tight">
-                    Consult <span className="text-[#0f83fd]">Best Doctors</span> Your Nearby Location.
-                </h1>
-                <p className="text-[#707885] my-5 text-lg md:text-xl text-center lg:text-left font-semibold">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
-
         <div className="container mx-auto grid grid-cols-2 items-center">
             <div className="flex flex-col">
                 <h1 className="text-6xl font-bold text-[#272B41] leading-tight">
@@ -24,13 +17,9 @@ const Banner = () => {
                 <p className="text-[#707885] my-5 text-xl font-semibold">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
 
 
-
                 <div className="flex gap-10">
 
-                    <button className="relative px-7 mx-auto lg:ms-0 w-fit h-fit py-4 text-xl overflow-hidden font-medium text-gray-100 bg-[#0F83FD] border border-[#0F83FD] rounded-lg shadow-inner group">
-
                     <button className="relative px-7 w-fit h-fit py-4 text-xl overflow-hidden font-medium text-gray-100 bg-[#0F83FD] border border-[#0F83FD] rounded-lg shadow-inner group">
-
 
                         <span className="absolute top-0 left-0 w-full h-0 transition-all duration-700 delay-200 bg-gray-100 group-hover:h-1/2 ease"></span>
                         <span className="absolute top-0 bottom-0 left-0 w-0 h-full transition-all duration-700 delay-200 bg-gray-100 group-hover:w-1/2 ease"></span>
@@ -44,17 +33,10 @@ const Banner = () => {
                     </button>
 
 
-
-                    <img src={downArrowImg} alt="img" className="hidden lg:block" />
-                </div>
-
-                <form className=" z-20 bg-slate-50 shadow-2xl rounded flex items-center flex-col px-5">
-
                     <img src={downArrowImg} alt="img" />
                 </div>
 
                 <form className="h-20 w-fit z-20 bg-slate-50 shadow-2xl rounded flex items-center px-5">
-
                     <div className="border-r-2 border-gray-300 pr-4 py-2">
                         <div className="flex items-center bg-gray-50 px-2">
                             <BsSearch />
@@ -80,10 +62,7 @@ const Banner = () => {
 
             </div>
 
-            <div className="relative invisible lg:visible">
-
             <div className="relative">
-
                 <img src={bannerImg} alt="" className="mx-auto" />
 
                 <div className="absolute top-1/2 -left-5 animate-custom-bounce-1 duration-1000 ease-in-out transition">
