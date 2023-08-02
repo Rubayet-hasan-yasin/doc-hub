@@ -19,7 +19,7 @@ const Banner = () => {
 
                 <div className="flex gap-10">
 
-                    <button className="relative mx-auto lg:mx-0 px-7 w-fit h-fit py-4 text-xl overflow-hidden font-medium text-gray-100 bg-[#0F83FD] border border-[#0F83FD] rounded-lg shadow-inner group">
+                    <button className="relative mx-auto lg:mx-0 px-5 w-fit h-fit py-3 text-xl overflow-hidden font-medium text-gray-100 bg-[#0F83FD] border border-[#0F83FD] rounded-lg shadow-inner group">
 
                         <span className="absolute top-0 left-0 w-full h-0 transition-all duration-700 delay-200 bg-gray-100 group-hover:h-1/2 ease"></span>
                         <span className="absolute top-0 bottom-0 left-0 w-0 h-full transition-all duration-700 delay-200 bg-gray-100 group-hover:w-1/2 ease"></span>
@@ -53,7 +53,7 @@ const Banner = () => {
 
 
                     <div className="flex items-center bg-gray-50 px-2 md:w-[30%] py-[7px]">
-
+                        <GrCalendar size={20}/> 
                         <input type="date" name="" id="" className="rounded outline-none py-1 px-2 w-full" placeholder="Location" />
                     </div>
 
