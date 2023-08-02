@@ -4,22 +4,22 @@ import image1 from "../../../assets/banner-img1.png"
 import image2 from "../../../assets/banner-img2.png"
 import image3 from "../../../assets/banner-img3.png"
 import { BsSearch } from "react-icons/bs";
-import { GrLocation } from "react-icons/gr";
+import { GrLocation, GrCalendar } from "react-icons/gr";
 
 
 const Banner = () => {
     return (
-        <div className="container mx-auto grid grid-cols-2 items-center">
+        <div className="container mx-auto lg:grid lg:grid-cols-2 items-center">
             <div className="flex flex-col">
-                <h1 className="text-6xl font-bold text-[#272B41] leading-tight">
+                <h1 className="md:text-6xl text-4xl text-center lg:text-left font-bold text-[#272B41] leading-tight">
                     Consult <span className="text-[#0f83fd]">Best Doctors</span> Your Nearby Location.
                 </h1>
-                <p className="text-[#707885] my-5 text-xl font-semibold">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+                <p className="text-[#707885] my-5 lg:text-xl font-semibold text-center lg:text-left text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
 
 
                 <div className="flex gap-10">
 
-                    <button className="relative px-7 w-fit h-fit py-4 text-xl overflow-hidden font-medium text-gray-100 bg-[#0F83FD] border border-[#0F83FD] rounded-lg shadow-inner group">
+                    <button className="relative mx-auto lg:mx-0 px-5 w-fit h-fit py-3 text-xl overflow-hidden font-medium text-gray-100 bg-[#0F83FD] border border-[#0F83FD] rounded-lg shadow-inner group">
 
                         <span className="absolute top-0 left-0 w-full h-0 transition-all duration-700 delay-200 bg-gray-100 group-hover:h-1/2 ease"></span>
                         <span className="absolute top-0 bottom-0 left-0 w-0 h-full transition-all duration-700 delay-200 bg-gray-100 group-hover:w-1/2 ease"></span>
@@ -33,28 +33,28 @@ const Banner = () => {
                     </button>
 
 
-                    <img src={downArrowImg} alt="img" />
+                    <img src={downArrowImg} alt="img" className="hidden lg:block" />
                 </div>
 
-                <form className="h-20 w-fit z-20 bg-slate-50 shadow-2xl rounded flex items-center px-5">
-                    <div className="border-r-2 border-gray-300 pr-4 py-2">
-                        <div className="flex items-center bg-gray-50 px-2">
+                <form className="md:h-16 lg:w-[140%] my-20 z-20 rounded md:flex items-center bg-slate-50 shadow-[0_0px_70px_-10px_rgba(0,0,0,0.4)] px-5 py-5 md:py-0">
+                  
+                        <div className="flex items-center bg-gray-50 px-2 md:w-[30%] md:border-r py-2">
                             <BsSearch />
-                            <input type="text" name="" id="" className="rounded outline-none py-1 px-2 w-60" placeholder="Search doctors, clinics, hospitals," />
+                            <input type="text" name="" id="" className="rounded outline-none py-1 px-2 w-full" placeholder="Search doctors, clinics, hospitals," />
                         </div>
-                    </div>
+                  
 
-                    <div className="border-r-2 border-gray-300 pr-4 py-2">
-                        <div className="flex items-center bg-gray-50 px-3">
+                
+                        <div className="flex items-center bg-gray-50 px-2 md:w-[30%] md:border-r py-2">
                             <GrLocation size={20} />
-                            <input type="text" name="" id="" className="rounded outline-none py-1 px-2 w-60" placeholder="Location" />
+                            <input type="text" name="" id="" className="rounded outline-none py-1 px-2 w-full" placeholder="Location" />
                         </div>
-                    </div>
+                  
 
 
-                    <div className="flex items-center bg-gray-50 px-3">
-
-                        <input type="date" name="" id="" className="rounded outline-none py-1 px-2 w-60" placeholder="Location" />
+                    <div className="flex items-center bg-gray-50 px-2 md:w-[30%] py-[7px]">
+                        <GrCalendar size={20}/> 
+                        <input type="date" name="" id="" className="rounded outline-none py-1 px-2 w-full" placeholder="Location" />
                     </div>
 
                     <button type="submit" className="bg-blue-500 text-white py-2 px-6 rounded-lg">Search</button>
@@ -62,10 +62,10 @@ const Banner = () => {
 
             </div>
 
-            <div className="relative">
+            <div className="relative hidden lg:block">
                 <img src={bannerImg} alt="" className="mx-auto" />
 
-                <div className="absolute top-1/2 -left-5 animate-custom-bounce-1 duration-1000 ease-in-out transition">
+                <div className="lg:absolute lg:top-1/2 lg:-left-5 animate-custom-bounce-1 duration-1000 ease-in-out transition">
                     <img src={image1} alt="" />
                 </div>
 
