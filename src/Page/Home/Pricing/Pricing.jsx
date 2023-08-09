@@ -7,7 +7,7 @@ import PricingCard from "../../../components/PricingCard/PricingCard";
 const arr = [
     {
         "Icon": BiSolidUser,
-        
+        "category": "For individuals",
         "pricing": "Basic",
         "decription": "Lorem ipsum dolor consectetur adipiscing elit,sed do eiusmod tempor",
         "price": "199",
@@ -21,7 +21,7 @@ const arr = [
     },
     {
         "Icon": IoHomeSharp,
-        
+        "category": "For startups",
         "pricing": "Pro",
         "decription": "Lorem ipsum dolor consectetur adipiscing elit,sed do eiusmod tempor",
         "price": "399",
@@ -40,6 +40,7 @@ const arr = [
         "Icon": BsFillBuildingFill,
         
         "pricing": "Enterprise",
+        "category": "For big companies",
         "decription": "Lorem ipsum dolor consectetur adipiscing elit,sed do eiusmod tempor",
         "price": "99",
         "included": [
@@ -54,10 +55,10 @@ const arr = [
 
 const Pricing = () => {
     return (
-        <div className="container mx-auto mb-40">
+        <div className="container mx-auto my-20">
             <Title text={'Pricing Plan'} center={true}/>
 
-            <div className="grid md:grid-cols-3 gap-5 mx-auto items-center mt-20">
+            <div className="grid md:grid-cols-3 gap-7 mx-auto items-center mt-24">
                 {
                     arr.map((item, index)=> <PricingCard key={index} item={item} number={index}></PricingCard>)
                 }
