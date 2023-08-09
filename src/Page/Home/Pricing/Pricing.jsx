@@ -29,7 +29,10 @@ const arr = [
             "Lorem ipsum dolor amet, consectetur",
             "Lorem ipsum dolor amet, consectetur",
             "Lorem ipsum dolor amet, consectetur",
-            "Lorem ipsum dolor amet, consectetur"
+            "Lorem ipsum dolor amet, consectetur",
+            "Lorem ipsum dolor amet, consectetur",
+            "Lorem ipsum dolor amet, consectetur",
+            "Lorem ipsum dolor amet, consectetur",
             
         ]
     },
@@ -54,9 +57,9 @@ const Pricing = () => {
         <div className="container mx-auto mb-40">
             <Title text={'Pricing Plan'} center={true}/>
 
-            <div className="grid grid-cols-3 gap-5 mx-auto">
+            <div className="grid md:grid-cols-3 gap-5 mx-auto items-center mt-20">
                 {
-                    arr.map((item, index)=> <PricingCard key={index} item={item}></PricingCard>)
+                    arr.map((item, index)=> <PricingCard key={index} item={item} number={index}></PricingCard>)
                 }
             </div>
         </div>
