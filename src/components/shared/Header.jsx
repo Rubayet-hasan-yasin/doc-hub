@@ -9,7 +9,7 @@ const Header = () => {
   const [menu, setMenu] = useState(false);
 
   return (
-    <nav className="bg-[#F2F6F6] z-50 fixed left-0 right-0 h-fit">
+    <nav className="bg-[#F2F6F6] z-50 fixed left-0 right-0 h-fit overflow-hidden">
       <div className="container mx-auto lg:flex justify-between h-20 items-center ">
         <button className="absolute lg:hidden">
           <BiMenu onClick={() => setMenu(true)} size={40} color="blue" />

@@ -9,7 +9,7 @@ const PricingCard = ({ item, number }) => {
             <div className="flex gap-5 items-center">
                 <span className="relative">
 
-                    <Icon color='#0E82FD' className="h-20 w-20 z-50 relative p-4" />
+                    <Icon color='#0E82FD' className="h-20 w-20 z-20 relative p-4" />
                     <span className="group-hover: bg-white absolute top-0 z-0 rounded-3xl w-20 h-20 p-8 group-hover:rotate-180 duration-1000"></span>
                 </span>
 
