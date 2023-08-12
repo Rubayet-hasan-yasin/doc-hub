@@ -51,8 +51,9 @@ const Work = () => {
                     {/* 4 card section  */}
                     <div className='grid grid-cols-2 gap-10 mt-14'>
                         {
-                            data.map((item, i) => <div key={i} className='group flex gap-7'>
-                                <div className='w-48 h-20'>
+                            data.map((item, i) => <div key={i} className='group flex gap-5'>
+                                {/* { animation icon } */}
+                                <div className='w-56 h-20'>
                                     <span className="relative">
 
                                         
