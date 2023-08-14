@@ -9,7 +9,8 @@ const Header = () => {
   const [menu, setMenu] = useState(false);
 
   return (
-    <nav className="bg-[#F2F6F6] z-50 fixed left-0 right-0 h-fit overflow-hidden">
+    
+    <nav className="bg-[#F2F6F6] z-50 fixed left-0 right-0 h-fit">
       <div className="container mx-auto lg:flex justify-between h-20 items-center ">
         <button className="absolute lg:hidden">
           <BiMenu onClick={() => setMenu(true)} size={40} color="blue" />
@@ -156,6 +157,7 @@ const Header = () => {
           </ul>
 
           <div className="flex gap-5 bg-[#F2F6F6] items-center px-32 lg:px-0">
+            {/* search  */}
             <div className="relative hidden lg:block ">
               <button
                 onClick={() => setShowSearch(!showSearch)}
@@ -165,7 +167,7 @@ const Header = () => {
               </button>
 
               <form
-                className={` bg-slate-200 rounded shadow-2xl flex absolute lg:right-0  top-12 z-10 ${showSearch ? "h-16" : "h-0 invisible"
+                className={` bg-slate-100 rounded shadow-2xl flex absolute lg:right-0  top-12 z-50 ${showSearch ? "h-16" : "h-0 invisible"
                   } overflow-hidden transition-all duration-1000 ease`}
               >
                 <input

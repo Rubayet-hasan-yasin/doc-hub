@@ -58,7 +58,7 @@ const Work = () => {
 
                                         
                                         <span className="bg-blue-100 group-hover:bg-white absolute top-0 z-0 rounded-3xl w-20 h-20 p-8 group-hover:rotate-180 duration-1000"></span>
-                                        <span><img src={item.icon} className="h-20 w-20 z-50 relative p-4" /></span>
+                                        <span><img src={item.icon} className="h-20 w-20 relative p-4" /></span>
                                     </span>
                                 </div>
 
