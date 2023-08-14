@@ -5,7 +5,10 @@ const MainLayout = () => {
     return (
         <div>
             <Header />
+
+            <div className="pt-20">
             <Outlet />
+            </div>
         </div>
     );
 };

@@ -10,7 +10,7 @@ const arr = [
         "category": "For individuals",
         "pricing": "Basic",
         "decription": "Lorem ipsum dolor consectetur adipiscing elit,sed do eiusmod tempor",
-        "price": "199",
+        "price": "99",
         "included": [
             "Lorem ipsum dolor amet, consectetur",
             "Lorem ipsum dolor amet, consectetur",
@@ -24,7 +24,7 @@ const arr = [
         "category": "For startups",
         "pricing": "Pro",
         "decription": "Lorem ipsum dolor consectetur adipiscing elit,sed do eiusmod tempor",
-        "price": "399",
+        "price": "299",
         "included": [
             "Lorem ipsum dolor amet, consectetur",
             "Lorem ipsum dolor amet, consectetur",
@@ -42,7 +42,7 @@ const arr = [
         "pricing": "Enterprise",
         "category": "For big companies",
         "decription": "Lorem ipsum dolor consectetur adipiscing elit,sed do eiusmod tempor",
-        "price": "99",
+        "price": "399",
         "included": [
             "Lorem ipsum dolor amet, consectetur",
             "Lorem ipsum dolor amet, consectetur",

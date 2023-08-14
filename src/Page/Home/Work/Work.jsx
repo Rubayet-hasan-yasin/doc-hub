@@ -33,7 +33,7 @@ const data = [
 
 const Work = () => {
     return (
-        <div className='bg-[#F2F6F6] bg-[url(/src/assets/work/doctor-shape-img1.png),_url(/src/assets/work/doctor-shape-img2.png)] bg-no-repeat bg-[position:left_top,_right_bottom] bg-[length:200px,_200px] h-[80vh] mb-40'>
+        <div className='bg-[#F2F6F6] bg-[url(/src/assets/work/doctor-shape-img1.png),_url(/src/assets/work/doctor-shape-img2.png)] bg-no-repeat bg-[position:left_top,_right_bottom] bg-[length:200px,_200px] h-[80vh] mb-20'>
 
             <div className='container mx-auto grid grid-cols-3 items-end h-full'>
                 {/* left image part */}
@@ -51,8 +51,9 @@ const Work = () => {
                     {/* 4 card section  */}
                     <div className='grid grid-cols-2 gap-10 mt-14'>
                         {
-                            data.map((item, i) => <div key={i} className='group flex gap-7'>
-                                <div className='w-48 h-20'>
+                            data.map((item, i) => <div key={i} className='group flex gap-5'>
+                                {/* { animation icon } */}
+                                <div className='w-56 h-20'>
                                     <span className="relative">
 
                                         
