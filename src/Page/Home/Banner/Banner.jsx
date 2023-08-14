@@ -10,7 +10,7 @@ import { GrLocation, GrCalendar } from "react-icons/gr";
 
 const Banner = () => {
     return (
-        <div className="bg-banner-bg bg-cover">
+        <div className="bg-banner-bg bg-cover bg-[#F2F6F6]">
             <div className="container mx-auto lg:grid lg:grid-cols-2 items-center">
                 <div className="flex flex-col">
                     <h1 className="md:text-6xl text-4xl text-center lg:text-left font-bold text-[#272B41] leading-tight">
