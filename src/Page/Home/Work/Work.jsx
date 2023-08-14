@@ -33,34 +33,44 @@ const data = [
 
 const Work = () => {
     return (
-        <div className='bg-[#F2F6F6] bg-[url(/src/assets/work/doctor-shape-img1.png),_url(/src/assets/work/doctor-shape-img2.png)] bg-no-repeat bg-[position:left_top,_right_bottom] bg-[length:200px,_200px] h-[80vh] mb-20'>
+        <div className='bg-[#F2F6F6] bg-[url(/src/assets/work/doctor-shape-img1.png),_url(/src/assets/work/doctor-shape-img2.png)] bg-no-repeat bg-[position:left_top,_right_bottom] bg-[length:200px,_200px] mb-20'>
 
-            <div className='container mx-auto grid grid-cols-3 items-end h-full'>
+            <div className='container mx-auto flex items-end h-full'>
                 {/* left image part */}
-                <div className=''>
-                    <img src={docimg} alt="" className='w-[368px] ml-auto' />
+                <div className='hidden lg:block'>
+                    <img src={docimg} alt="" className='w-full h-full' />
                 </div>
 
                 {/* right side  */}
-                <div className=' col-span-2 p-14'>
+                <div className=' col-span-2 lg:p-14 p-5 lg:w-4/5 border'>
                     <h5 className='text-[#278FFC] font-bold text-xl'>How it Works</h5>
 
                     {/* Title from componets  */}
                     <Title text={'4 easy steps to get your solution'} />
 
                     {/* 4 card section  */}
-                    <div className='grid grid-cols-2 gap-10 mt-14'>
+                    <div className='grid sm:grid-cols-2 gap-10 mt-14'>
                         {
                             data.map((item, i) => <div key={i} className='group flex gap-5'>
                                 {/* { animation icon } */}
-                                <div className='w-56 h-20'>
-                                    <span className="relative">
+                                {/* <div className='w-52 h-20 relative bg-slate-500'>
+                                    
 
                                         
                                         <span className="bg-blue-100 group-hover:bg-white absolute top-0 z-0 rounded-3xl w-20 h-20 p-8 group-hover:rotate-180 duration-1000"></span>
-                                        <span><img src={item.icon} className="h-20 w-20 relative p-4" /></span>
-                                    </span>
+                                        <img src={item.icon} className="h-20 w-20 relative p-4" />
+                                    
+                                </div> */}
+
+                                <div className="w-52 h-20 relative">
+                                    <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center group-hover:rotate-180 duration-1000">
+                                        <span className="bg-blue-100 rounded-3xl w-20 h-20"></span>
+                                    </div>
+                                    <img src={item.icon} className="h-20 w-20 relative p-4" />
+                                    
                                 </div>
+
+
 
                                 <div>
                                     <h6 className='text-2xl font-bold'>{item.title}</h6>

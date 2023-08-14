@@ -41,7 +41,7 @@ const Articles = () => {
             <Title center={true} text={'Latest Articles'} />
 
             {/* card parent div  */}
-            <div className="my-20 grid md:grid-cols-2 gap-8 rounded-lg">
+            <div className="my-20 grid lg:grid-cols-2 gap-8 rounded-lg">
                 {
                     arr.map(item =>
                         <div
