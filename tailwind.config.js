@@ -5,7 +5,15 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'banner-bg': "url('/src/assets/banner-bg.png')",
+        'work-top-left': "url('/src/assets/work/doctor-shape-img1.png')",
+        'work-bottom-right': "url('/src/assets/work/doctor-shape-img2.png')",
+       
+        
+      }
+    },
   },
   plugins: [],
 }
