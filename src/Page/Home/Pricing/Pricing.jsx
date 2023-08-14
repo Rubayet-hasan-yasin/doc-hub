@@ -58,7 +58,7 @@ const Pricing = () => {
         <div className="container mx-auto my-20">
             <Title text={'Pricing Plan'} center={true}/>
 
-            <div className="grid md:grid-cols-3 gap-7 mx-auto items-center mt-24">
+            <div className="grid lg:grid-cols-3 gap-7 mx-auto items-center mt-24">
                 {
                     arr.map((item, index)=> <PricingCard key={index} item={item} number={index}></PricingCard>)
                 }
