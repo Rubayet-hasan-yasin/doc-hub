@@ -4,19 +4,17 @@ import Pricing from "../Pricing/Pricing";
 import Work from "../Work/Work";
 
 const Home = () => {
+  return (
+    <div>
+      <Banner />
 
-    return (
-        <div>
-            <Banner />
+      <Pricing />
 
-            <Pricing/>
+      <Work />
 
-            <Work/>
-
-            <Articles/>
-        </div>
-    );
-
+      <Articles />
+    </div>
+  );
 };
 
 export default Home;
