@@ -10,11 +10,11 @@ const Footer = () => {
       {/* upper side */}
       <div>
         {/* grid parent */}
-        <div className="grid grid-cols-1 lg:grid-cols-5 gap-4 lg:gap-10">
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-4 lg:gap-10 pb-4">
           {/* first col */}
           <div>
             <img src={logo} alt="logo" />
-            <p>
+            <p className="pt-2">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore.
             </p>
@@ -22,7 +22,7 @@ const Footer = () => {
           {/* second col */}
           <div>
             <p className="text-xl font-semibold">For Patients</p>
-            <ul>
+            <ul className="pt-4">
               <li>Search for Doctors</li>
               <li>Login</li>
               <li>Register</li>
@@ -84,7 +84,10 @@ const Footer = () => {
         </div>
       </div>
       {/* down side */}
-      <div></div>
+      <div className="text-center md:flex justify-between items-center border-t border-gray-300">
+        <p className="pt-2">Copyright © 2023 Dreamguys. All Rights Reserved</p>
+        <p>Privacy Policy &nbsp; &nbsp; | &nbsp; &nbsp; Terms and Conditions</p>
+      </div>
     </footer>
   );
 };
