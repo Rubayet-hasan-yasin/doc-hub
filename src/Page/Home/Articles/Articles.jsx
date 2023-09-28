@@ -5,6 +5,7 @@ import { BiCalendar, BiUser } from "react-icons/bi";
 // fake data for card 
 const arr = [
     {
+        id: 1,
         author: 'john deo',
         image: "/src/assets/Articles/blog-11.jpg",
         date: "13 Aug, 2023",
@@ -12,6 +13,7 @@ const arr = [
         description: "Sed perspiciatis unde omnis iste natus error sit voluptatem accusantium"
     },
     {
+        id: 2,
         author: 'Darren Elder',
         image: "/src/assets/Articles/blog-12.jpg",
         date: "10 Sep, 2023",
@@ -19,6 +21,7 @@ const arr = [
         description: "Sed perspiciatis unde omnis iste natus error sit voluptatem accusantium"
     },
     {
+        id: 3,
         author: 'Ruby Perrin',
         image: "/src/assets/Articles/blog-13.jpg",
         date: "30 Oct, 2023",
@@ -26,6 +29,7 @@ const arr = [
         description: "Sed perspiciatis unde omnis iste natus error sit voluptatem accusantium"
     },
     {
+        id: 4,
         author: 'Sofia Brient',
         image: "/src/assets/Articles/blog-14.jpg",
         date: "08 Nov, 2023",
@@ -45,7 +49,7 @@ const Articles = () => {
                 {
                     arr.map(item =>
                         <div
-                            key={item}
+                            key={item.id}
                             className="border rounded-xl p-5 flex gap-5 items-center"
                         >
                             {/* image part */}
