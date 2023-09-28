@@ -102,8 +102,8 @@ const handleprev = ()=>{
           <Title text={'Specialities'} />
 
           <div className="flex gap-3">
-            <LiaAngleLeftSolid onClick={handleprev} className="rounded-full shadow-md shadow-gray-300 p-2 text-5xl"/>
-            <LiaAngleRightSolid onClick={handlenext} className="rounded-full shadow-md shadow-gray-300 p-2 text-5xl"/>
+            <LiaAngleLeftSolid onClick={handleprev} className=" bg-white rounded-full shadow-md shadow-gray-300 p-2 text-5xl"/>
+            <LiaAngleRightSolid onClick={handlenext} className="bg-white rounded-full shadow-md shadow-gray-300 p-2 text-5xl"/>
           </div>
         </div>
         <Swiper
