@@ -28,10 +28,61 @@ import { FreeMode, Pagination } from 'swiper/modules';
 
 
 
+// items array 
+const items = [
+  {
+    icon: img1,
+    text: 'Cardiology'
+  },
+  {
+    icon: img2,
+    text: 'Neurology'
+  },
+  {
+    icon: img3,
+    text: 'Urology'
+  },
+  {
+    icon: img4,
+    text: 'Orthopedic'
+  },
+  {
+    icon: img5,
+    text: 'Dentist'
+  },
+  {
+    icon: img6,
+    text: 'Ophthalmology'
+  },
+  {
+    icon: img1,
+    text: 'Cardiology'
+  },
+  {
+    icon: img2,
+    text: 'Neurology'
+  },
+  {
+    icon: img3,
+    text: 'Urology'
+  },
+  {
+    icon: img4,
+    text: 'Orthopedic'
+  },
+  {
+    icon: img5,
+    text: 'Dentist'
+  },
+  {
+    icon: img6,
+    text: 'Ophthalmology'
+  },
+]
+
 
 const Specialities = () => {
   const swiperRef = useRef();
-  const swiper = useSwiper();
 
 const handlenext = ()=>{
   swiperRef.current.swiper.slideNext();
@@ -77,127 +128,19 @@ const handleprev = ()=>{
           modules={[Pagination]}
           className="mySwiper"
         >
-          <SwiperSlide>
-            < div className="rounded-lg w-40 border mx-auto" >
-              <div className="my-12">
-                <figure className="bg-[#F2F6F6] p-4 rounded-full mx-auto w-[90px] h-[90px] grid justify-center items-center">
-                  <img src={img1} alt="" />
-                </figure>
-                <p className="text-center text-lg font-semibold">Cardiology</p>
-              </div>
-            </div >
-          </SwiperSlide>
-          <SwiperSlide>
-            < div className="rounded-lg w-40 border mx-auto" >
-              <div className="my-12">
-                <figure className="bg-[#F2F6F6] p-4 rounded-full mx-auto w-[90px] h-[90px] grid justify-center items-center">
-                  <img src={img2} className="" />
-                </figure>
-                <p className="text-center text-lg  font-semibold">Neurology</p>
-              </div>
-            </div >
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="rounded-lg w-40 border mx-auto" >
-              <div className="my-12">
-                <figure className="bg-[#F2F6F6] p-4 rounded-full mx-auto w-[90px] h-[90px] grid justify-center items-center">
-                  <img src={img3} className="" />
-                </figure>
-                <p className="text-center text-lg font-semibold">Urology</p>
-              </div>
-            </div >
-          </SwiperSlide>
-          <SwiperSlide>
-            < div className="rounded-lg w-40 border mx-auto" >
-              <div className="my-12">
-                <figure className="bg-[#F2F6F6] p-4 rounded-full mx-auto w-[90px] h-[90px] grid justify-center items-center">
-                  <img src={img4} className="" />
-                </figure>
-                <p className="text-center text-lg font-semibold">Orthopedic</p>
-              </div>
-            </div >
-          </SwiperSlide>
-          <SwiperSlide>
-            < div className="rounded-lg w-40 border mx-auto" >
-              <div className="my-12">
-                <figure className="bg-[#F2F6F6] p-4 rounded-full mx-auto w-[90px] h-[90px] grid justify-center items-center">
-                  <img src={img5} className="" />
-                </figure>
-                <p className="text-center text-lg font-semibold">Dentist</p>
-              </div>
-            </div >
-          </SwiperSlide>
-          <SwiperSlide>
-            < div className="rounded-lg w-40 border mx-auto" >
-              <div className="my-12">
-                <figure className="bg-[#F2F6F6] p-4 rounded-full mx-auto w-[90px] h-[90px] grid justify-center items-center">
-                  <img src={img6} className=" " />
-                </figure>
-                <p className="text-center text-lg font-semibold">Ophthalmology</p>
-              </div>
-            </div >
-          </SwiperSlide>
-          <SwiperSlide>
-            < div className="rounded-lg w-40 border mx-auto" >
-              <div className="my-12">
-                <figure className="bg-[#F2F6F6] p-4 rounded-full mx-auto w-[90px] h-[90px] grid justify-center items-center">
-                  <img src={img1} alt="" />
-                </figure>
-                <p className="text-center text-lg font-semibold">Cardiology</p>
-              </div>
-            </div >
-          </SwiperSlide>
-          <SwiperSlide>
-            < div className="rounded-lg w-40 border mx-auto" >
-              <div className="my-12">
-                <figure className="bg-[#F2F6F6] p-4 rounded-full mx-auto w-[90px] h-[90px] grid justify-center items-center">
-                  <img src={img2} className="" />
-                </figure>
-                <p className="text-center text-lg  font-semibold">Neurology</p>
-              </div>
-            </div >
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="rounded-lg w-40 border mx-auto" >
-              <div className="my-12">
-                <figure className="bg-[#F2F6F6] p-4 rounded-full mx-auto w-[90px] h-[90px] grid justify-center items-center">
-                  <img src={img3} className="" />
-                </figure>
-                <p className="text-center text-lg font-semibold">Urology</p>
-              </div>
-            </div >
-          </SwiperSlide>
-          <SwiperSlide>
-            < div className="rounded-lg w-40 border mx-auto" >
-              <div className="my-12">
-                <figure className="bg-[#F2F6F6] p-4 rounded-full mx-auto w-[90px] h-[90px] grid justify-center items-center">
-                  <img src={img4} className="" />
-                </figure>
-                <p className="text-center text-lg font-semibold">Orthopedic</p>
-              </div>
-            </div >
-          </SwiperSlide>
-          <SwiperSlide>
-            < div className="rounded-lg w-40 border mx-auto" >
-              <div className="my-12">
-                <figure className="bg-[#F2F6F6] p-4 rounded-full mx-auto w-[90px] h-[90px] grid justify-center items-center">
-                  <img src={img5} className="" />
-                </figure>
-                <p className="text-center text-lg font-semibold">Dentist</p>
-              </div>
-            </div >
-          </SwiperSlide>
-          <SwiperSlide>
-            < div className="rounded-lg w-40 border mx-auto" >
-              <div className="my-12">
-                <figure className="bg-[#F2F6F6] p-4 rounded-full mx-auto w-[90px] h-[90px] grid justify-center items-center">
-                  <img src={img6} className=" " />
-                </figure>
-                <p className="text-center text-lg font-semibold">Ophthalmology</p>
-              </div>
-            </div >
-          </SwiperSlide>
-
+          {
+            items.map((item, index)=>
+              (<SwiperSlide key={index}>
+              < div className="rounded-lg w-40 border mx-auto" >
+                <div className="my-12">
+                  <figure className="bg-[#F2F6F6] p-4 rounded-full mx-auto w-[90px] h-[90px] grid justify-center items-center">
+                    <img src={item.icon} alt="" />
+                  </figure>
+                  <p className="text-center text-lg font-semibold">Cardiology</p>
+                </div>
+              </div >
+            </SwiperSlide>))
+          }
         </Swiper>
 
 

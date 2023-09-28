@@ -52,15 +52,7 @@ const Work = () => {
                     <div className='grid sm:grid-cols-2 gap-10 mt-14'>
                         {
                             data.map((item, i) => <div key={i} className='group flex gap-5'>
-                                {/* { animation icon } */}
-                                {/* <div className='w-52 h-20 relative bg-slate-500'>
-                                    
-
-                                        
-                                        <span className="bg-blue-100 group-hover:bg-white absolute top-0 z-0 rounded-3xl w-20 h-20 p-8 group-hover:rotate-180 duration-1000"></span>
-                                        <img src={item.icon} className="h-20 w-20 relative p-4" />
-                                    
-                                </div> */}
+                               
 
                                 <div className="w-52 h-20 relative">
                                     <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center group-hover:rotate-180 duration-1000">
