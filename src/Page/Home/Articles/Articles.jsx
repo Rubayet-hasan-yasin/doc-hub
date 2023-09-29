@@ -45,12 +45,12 @@ const Articles = () => {
             <Title center={true} text={'Latest Articles'} />
 
             {/* card parent div  */}
-            <div className="my-20 grid lg:grid-cols-2 gap-8 rounded-lg">
+            <div className="my-20 grid md:grid-cols-2 gap-8 rounded-lg">
                 {
                     arr.map(item =>
                         <div
                             key={item.id}
-                            className="border rounded-xl p-5 flex gap-5 items-center bg-white"
+                            className="border rounded-xl p-5 flex flex-col lg:flex-row gap-5 items-center bg-white"
                         >
                             {/* image part */}
                             <div className="">
@@ -63,9 +63,9 @@ const Articles = () => {
                             </div>
 
                             {/* right part */}
-                            <div className="pr-10">
+                            <div className="xl:pr-10 text-center lg:text-left">
                                 {/* author name and date */}
-                                <div className="flex gap-3">
+                                <div className="flex gap-3 justify-center lg:justify-normal">
                                     <p className="flex items-center text-base font-semibold gap-3 text-[#6B7280]">
                                         <BiUser size={25} />
                                         <span>{item.author}</span>

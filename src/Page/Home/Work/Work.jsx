@@ -33,7 +33,7 @@ const data = [
 
 const Work = () => {
     return (
-        <div className='bg-[#F2F6F6] bg-[url(/src/assets/work/doctor-shape-img1.png),_url(/src/assets/work/doctor-shape-img2.png)] bg-no-repeat bg-[position:left_top,_right_bottom] bg-[length:200px,_200px] mb-20'>
+        <div className='bg-[#F2F6F6] bg-[url(/src/assets/work/doctor-shape-img1.png),_url(/src/assets/work/doctor-shape-img2.png)] bg-no-repeat bg-[position:left_top,_right_bottom] bg-[length:200px,_200px] mb-20 py-20 md:p-0'>
 
             <div className='container mx-auto flex items-end h-full'>
                 {/* left image part */}
@@ -42,7 +42,7 @@ const Work = () => {
                 </div>
 
                 {/* right side  */}
-                <div className=' col-span-2 lg:p-14 p-5 lg:w-4/5 border'>
+                <div className=' col-span-2 lg:p-14 pl-1 lg:w-4/5'>
                     <h5 className='text-[#278FFC] font-bold text-xl'>How it Works</h5>
 
                     {/* Title from componets  */}
@@ -51,12 +51,12 @@ const Work = () => {
                     {/* 4 card section  */}
                     <div className='grid sm:grid-cols-2 gap-10 mt-14'>
                         {
-                            data.map((item, i) => <div key={i} className='group flex gap-5'>
+                            data.map((item, i) => <div key={i} className='group flex gap-3 md:gap-5'>
                                
 
                                 <div className="w-52 h-20 relative">
                                     <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center group-hover:rotate-180 duration-1000">
-                                        <span className="bg-blue-100 rounded-3xl w-20 h-20"></span>
+                                        <span className="bg-blue-100 rounded-3xl w-20 h-20 border"></span>
                                     </div>
                                     <img src={item.icon} className="h-20 w-20 relative p-4" />
                                     
@@ -64,7 +64,7 @@ const Work = () => {
 
 
 
-                                <div>
+                                <div className=''>
                                     <h6 className='text-2xl font-bold'>{item.title}</h6>
                                     <p className='text-[#9096A0] font-semibold'>{item.decription}</p>
                                 </div>
