@@ -50,15 +50,15 @@ const Articles = () => {
                     arr.map(item =>
                         <div
                             key={item.id}
-                            className="border rounded-xl p-5 flex gap-5 items-center"
+                            className="border rounded-xl p-5 flex gap-5 items-center bg-white"
                         >
                             {/* image part */}
                             <div className="">
-                                <figure className="w-52 h-48 rounded-lg overflow-hidden relative group">
+                                <figure className="w-52 h-48 rounded-lg overflow-hidden relative hoverEffectContainer">
                                     <img src={item.image} alt="" className="group-hover:scale-125 duration-1000" />
 
                                     {/* image overley */}
-                                    <span className="h-0 w-0 rounded-full bg-slate-100 bg-opacity-50 absolute top-0 left-0 right-0 bottom-0 m-auto duration-1000 group-hover:h-[150%] group-hover:w-[150%] group-hover:-left-10 group-hover:bg-opacity-0"></span>
+                                    <span className="h-0 w-0 hoverEffectChield"></span>
                                 </figure>
                             </div>
 

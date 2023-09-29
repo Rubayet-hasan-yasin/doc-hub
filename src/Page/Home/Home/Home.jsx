@@ -18,7 +18,7 @@ const Home = () => {
 
       <Work />
 
-      {/* <Articles /> */}
+      <Articles />
     </div>
   );
 };

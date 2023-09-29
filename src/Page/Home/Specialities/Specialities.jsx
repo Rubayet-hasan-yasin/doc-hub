@@ -15,7 +15,7 @@ import Title from "../../../components/Title/Title";
 // swiper
 
 // Import Swiper React components
-import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/css';
