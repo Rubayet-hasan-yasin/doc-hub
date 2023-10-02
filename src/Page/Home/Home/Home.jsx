@@ -4,6 +4,7 @@ import BestDoctors from "../Best Doctors/BestDoctors";
 import Pricing from "../Pricing/Pricing";
 import Questions from "../Questions/Questions";
 import Specialities from "../Specialities/Specialities";
+import Testimonials from "../Testimonials/Testimonials";
 import Work from "../Work/Work";
 
 const Home = () => {
@@ -22,6 +23,8 @@ const Home = () => {
       <Articles />
 
       <Questions/>
+
+      <Testimonials/>
     </div>
   );
 };

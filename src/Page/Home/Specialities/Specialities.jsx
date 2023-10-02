@@ -1,4 +1,4 @@
-import "./Specialities.css";
+
 import React, { useRef } from "react";
 import { LiaAngleRightSolid, LiaAngleLeftSolid } from "react-icons/lia";
 
