@@ -96,7 +96,7 @@ const handleprev = ()=>{
   return (
     <>
 
-      <section className="container mx-auto select-none">
+      <section className="container mx-auto select-none mb-20">
         {/* title  */}
         <div className="my-20 flex justify-between">
           <Title text={'Specialities'} />

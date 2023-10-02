@@ -10,7 +10,7 @@ const Footer = () => {
       {/* upper side */}
       <div>
         {/* grid parent */}
-        <div className="grid grid-cols-1 lg:grid-cols-5 gap-4 lg:gap-10 pb-4">
+        <div className="grid grid-cols-1 lg:grid-cols-5 justify-evenly pb-4">
           {/* first col */}
           <div>
             <img src={logo} alt="logo" />
