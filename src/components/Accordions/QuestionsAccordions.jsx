@@ -22,7 +22,7 @@ function Icon({ id, open }) {
 
 
 const QuestionsAccordions = () => {
-    const [open, setOpen] = useState(0);
+    const [open, setOpen] = useState(1);
 
     const handleOpen = (value) => setOpen(open === value ? 0 : value);
 
