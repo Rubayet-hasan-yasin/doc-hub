@@ -6,6 +6,7 @@ import Questions from "../Questions/Questions";
 import Specialities from "../Specialities/Specialities";
 import Testimonials from "../Testimonials/Testimonials";
 import Work from "../Work/Work";
+import Partners from "../partners/Partners";
 
 const Home = () => {
   return (
@@ -25,6 +26,8 @@ const Home = () => {
       <Questions/>
 
       <Testimonials/>
+
+      <Partners/>
     </div>
   );
 };

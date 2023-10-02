@@ -6,7 +6,7 @@ import { HiOutlineMail } from "react-icons/hi";
 
 const Footer = () => {
   return (
-    <footer className="container mx-auto">
+    <footer className="container mx-auto bg-[#F2F6F6] py-10">
       {/* upper side */}
       <div>
         {/* grid parent */}
@@ -14,7 +14,7 @@ const Footer = () => {
           {/* first col */}
           <div>
             <img src={logo} alt="logo" />
-            <p className="pt-2">
+            <p className="pt-2 text-[#999FA8]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore.
             </p>
@@ -22,7 +22,7 @@ const Footer = () => {
           {/* second col */}
           <div>
             <p className="text-xl font-semibold">For Patients</p>
-            <ul className="pt-4">
+            <ul className="pt-4 text-[#999FA8]">
               <li>Search for Doctors</li>
               <li>Login</li>
               <li>Register</li>
@@ -31,7 +31,7 @@ const Footer = () => {
           {/* third col */}
           <div>
             <p className="text-xl font-semibold">For Doctors</p>
-            <ul>
+            <ul className="text-[#999FA8]">
               <li>Appointments</li>
               <li>Chat</li>
               <li>Login</li>
@@ -41,17 +41,17 @@ const Footer = () => {
           <div>
             <p className="text-xl font-semibold">Contact Us</p>
             {/* location */}
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-3 text-[#999FA8]">
               <IoLocation />
               <span>3556 Beech Street, USA</span>
             </div>
             {/* Phone */}
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-3 text-[#999FA8]">
               <BiPhoneCall />
               <a href="tel:+1 315 369 5943">+1 315 369 5943</a>
             </div>
             {/* Email */}
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-3 text-[#999FA8]">
               <HiOutlineMail />
               <a href="mailto:doccure@example.com">doccure@example.com</a>
             </div>
@@ -75,18 +75,18 @@ const Footer = () => {
             </form>
             {/* Socials logos */}
             <div className="flex items-center gap-2">
-              <FaFacebook className="text-xl"/>
-              <FaTwitter className="text-xl"/>
-              <FaInstagram className="text-xl"/>
-              <FaLinkedin className="text-xl"/>
+              <FaFacebook className="text-xl text-[#999FA8]"/>
+              <FaTwitter className="text-xl text-[#999FA8]"/>
+              <FaInstagram className="text-xl text-[#999FA8]"/>
+              <FaLinkedin className="text-xl text-[#999FA8]"/>
             </div>
           </div>
         </div>
       </div>
       {/* down side */}
       <div className="text-center md:flex justify-between items-center border-t border-gray-300">
-        <p className="pt-2">Copyright © 2023 Dreamguys. All Rights Reserved</p>
-        <p>Privacy Policy &nbsp; &nbsp; | &nbsp; &nbsp; Terms and Conditions</p>
+        <p className="pt-2 text-[#999FA8]">Copyright © 2023 <span className="text-gray-700">Dreamguys.</span> All Rights Reserved</p>
+        <p className="text-[#999FA8]">Privacy Policy &nbsp; &nbsp; | &nbsp; &nbsp; Terms and Conditions</p>
       </div>
     </footer>
   );
