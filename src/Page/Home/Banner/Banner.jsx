@@ -21,6 +21,7 @@ const Banner = () => {
 
                     <div className="flex gap-10">
 
+                    {/* Start a Consult bitton  */}
                         <button className="relative mx-auto lg:mx-0 px-5 w-fit h-fit py-3 text-xl overflow-hidden font-medium text-gray-100 bg-[#0F83FD] border border-[#0F83FD] rounded-lg shadow-inner group">
 
                             <span className="absolute top-0 left-0 w-full h-0 transition-all duration-700 delay-200 bg-gray-100 group-hover:h-1/2 ease"></span>
@@ -38,23 +39,23 @@ const Banner = () => {
                         <img src={downArrowImg} alt="img" className="hidden lg:block" />
                     </div>
 
-                    <form className="md:h-16 lg:w-[140%] my-20 z-20 rounded md:flex items-center bg-slate-50 shadow-[0_0px_70px_-10px_rgba(0,0,0,0.4)] px-5 py-5 md:py-0">
+                    <form className="md:h-16 lg:w-[140%] my-20 z-20 rounded md:flex items-center bg-white shadow-[0_0px_70px_-10px_rgba(0,0,0,0.4)] px-5 py-5 md:py-0">
 
-                        <div className="flex items-center bg-gray-50 px-2 md:w-[30%] md:border-r py-2">
+                        <div className="flex items-center bg-white px-2 md:w-[30%] md:border-r py-2">
                             <BsSearch />
                             <input type="text" name="" id="" className="rounded outline-none py-1 px-2 w-full" placeholder="Search doctors, clinics, hospitals," />
                         </div>
 
 
 
-                        <div className="flex items-center bg-gray-50 px-2 md:w-[30%] md:border-r py-2">
+                        <div className="flex items-center bg-white px-2 md:w-[30%] md:border-r py-2">
                             <GrLocation size={20} />
                             <input type="text" name="" id="" className="rounded outline-none py-1 px-2 w-full" placeholder="Location" />
                         </div>
 
 
 
-                        <div className="flex items-center bg-gray-50 px-2 md:w-[30%] py-[7px]">
+                        <div className="flex items-center bg-white px-2 md:w-[30%] py-[7px]">
                             <GrCalendar size={20} />
                             <input type="date" name="" id="" className="rounded outline-none py-1 px-2 w-full" placeholder="Location" />
                         </div>
