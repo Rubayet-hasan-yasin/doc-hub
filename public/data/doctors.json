@@ -1,0 +1,85 @@
+[
+    {
+        "name": "Dr. Darren Elder",
+        "image": "/src/assets/doctors/doctor-01.jpg",
+        "qalifications": "BDS, MDS - Oral & Maxillofacial Surgery",
+        "specialities": "Dentist",
+        "ratings": 4.00,
+        "feedback": 35,
+        "location":  "Newyork, USA",
+        "like": "99%",
+        "Hourly Rate": 100,
+        "description": "Welcome to the online profile of Dr. Darren Elder, a dedicated and experienced dentist specializing in oral and maxillofacial surgery. With a solid educational background, including a BDS and an MDS in Oral & Maxillofacial Surgery, Dr. Elder has emerged as a reputable professional in the dental field. His practice is located in the vibrant city of New York, USA.",
+        "education": [
+            {
+                "Degree": "American Dental Medical University",
+                "Institution": "BDS",
+                "year": "1998 - 2003"
+            },
+            {
+                "Degree": "American Dental Medical University",
+                "Institution": "MDS",
+                "year": "2003 - 2005"
+            }
+        ],
+        "work & experience": [
+            {
+                "Organization": "Glowing Smiles Family Dental Clinic",
+                "years": "2010 - Present"
+            },
+            {
+                "Organization": "Comfort Care Dental Clinic",
+                "years": "2007 - 2010"
+            },
+            {
+                "Organization": "Dream Smile Dental Practice",
+                "years": "2005 - 2007"
+            }
+        ],
+        "awards": [
+            {
+                "AwardName": "Humanitarian Award",
+                "Year": "July 2023",
+                "Description": "Recognized for outstanding contributions to humanitarian efforts, providing dental care to underserved communities and making a positive impact on society."
+              },
+              {
+                "AwardName": "Certificate for International Volunteer Service",
+                "Year": "March 2011",
+                "Description": "Acknowledged for dedicated international volunteer service, improving oral health on a global scale."
+              },
+              {
+                "AwardName": "The Dental Professional of The Year Award",
+                "Year": "May 2008",
+                "Description": "Honored as the Dental Professional of The Year for exceptional contributions to the dental field and outstanding patient care."
+              }
+        ],
+        "services": ["Tooth cleaning", "Root Canal Therapy", "Implants", "Composite Bonding", "Fissure Sealants", "Surgical Extractions"],
+        "specializations": ["Children Care", "Dental Care", "Oral and Maxillofacial Surgery", "Orthodontist", "Periodontist", "Prosthodontics"],
+
+
+        "clinicDetails": [
+            {
+                "name": "Smile Cute Dental Care Center",
+                "doctorTitle": "MDS - Periodontology and Oral Implantology, BDS",
+                "rate": 250,
+                "image": ["/src/assets/feature/feature-01.jpg", "/src/assets/feature/feature-02.jpg", "/src/assets/feature/feature-03.jpg", "/src/assets/feature/feature-04.jpg"],
+                "rating" : 4.00,
+                "feedback": 4,
+                "location": "2286 Sundown Lane, Austin, Texas 78749, USA",
+                "availability": [
+                    {
+                        "days": "Mon - Sat",
+                        "time": ["10:00 AM - 2:00 PM", "4:00 PM - 9:00 PM"]
+                    },
+                    {
+                        "days": "Sun",
+                        "time": ["10:00 AM - 2:00 PM"]
+                    }
+
+                 ],
+                 
+            }
+        ]
+
+    }
+]

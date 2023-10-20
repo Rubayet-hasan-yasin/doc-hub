@@ -6,7 +6,7 @@ import { HiOutlineMail } from "react-icons/hi";
 
 const Footer = () => {
   return (
-    <footer className="container mx-auto bg-[#F2F6F6] py-10">
+    <footer className="container mx-auto py-10">
       {/* upper side */}
       <div>
         {/* grid parent */}

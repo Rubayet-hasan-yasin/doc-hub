@@ -75,6 +75,7 @@ const Testimonials = () => {
                 <Swiper
                     ref={swiperRef}
                     rewind={true}
+                    speed={1500}
                     className="mySwiper "
                 >
                     {
